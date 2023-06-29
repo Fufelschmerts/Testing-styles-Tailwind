@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+<body>
+<div class="flex flex-wrap items-center justify-center flex-col mt-20">
+  <h1 class="w-[300px] md:w-[400px] text-2xl font-bold p-5 bg-[midnight] rounded-md text-center">
+    Testing styles Tailwind CSS with Quentin Tarantino
+  </h1>
+  <form action="" method="post"
+        class="w-[300px] block m-10 shadow-md rounded-md">
+    <label for="name" class="block w-full">
+      <span class="p-3">E-mail:</span>
+      <input id="name" type="email"
+             placeholder="Quentin@gmail.com"
+             class="form-input w-full bg-blue-100 focus:bg-blue-200 p-3 rounded-sm outline-none focus:border-r-2 border-black">
+    </label>
+    <label for="password" class="block w-full">
+      <span class="p-3">Password:</span>
+      <input id="password" type="text" placeholder="tarantino1998"
+             class="w-full bg-blue-100 focus:bg-blue-200 p-3 focus:border-r-2 outline-none">
+    </label>
+    <button type="submit"
+            class="bg-orange-300 transition-colors hover:bg-orange-600 w-full md:bg-midnight py-3 mt-5 rounded-md">
+      Login
+    </button>
+  </form>
+</div>
+<div class="grid grid-cols-[1fr_1fr_1fr] justify-items-center mx-10">
+  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+  </div>
+  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+  </div>
+  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+  </div>
+  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+  </div>
+  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+  </div>
+  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+  </div>
+  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+  </div>
+  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+  </div>
+  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+  </div>
+</div>
+<article class="prose lg:prose-xl w-[400px] mx-auto my-8">
+  <h1>Garlic bread with cheese: What the science tells us</h1>
+  <p>
+    For years parents have espoused the health benefits of eating garlic bread with cheese to their
+    children, with the food earning such an iconic status in our culture that kids will often dress
+    up as warm, cheesy loaf for Halloween.
+  </p>
+  <p>
+    But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
+    springing up around the country.
+  </p>
+  <!-- ... -->
+</article>
+<script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
+
