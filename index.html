@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="output.css">
-  <link rel="stylesheet" href="./style.css">
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=typography,aspect-ratio,line-clamp"></script>
+  <link rel="stylesheet" href="src/styles.css">
+  <link rel="stylesheet" href="public/output.css">
 </head>
 <body>
-<div class="flex flex-wrap items-center justify-center flex-col mt-20">
-  <h1 class="w-[300px] md:w-[400px] text-2xl font-bold p-5 bg-[midnight] rounded-md text-center">
+<header>
+
+</header>
+<div class="flex flex-wrap items-center justify-center flex-col mt-20 ">
+  <h1 class="w-[300px] md:w-[500px] text-3xl md:text-5xl font-bold p-5 rounded-md text-center leading-normal">
     Testing styles Tailwind CSS with Quentin Tarantino
   </h1>
   <form action="" method="post"
@@ -19,21 +22,21 @@
       <span class="p-3">E-mail:</span>
       <input id="name" type="email"
              placeholder="Quentin@gmail.com"
-             class="form-input w-full bg-blue-100 focus:bg-blue-200 p-3 rounded-sm outline-none focus:border-r-2 border-black">
+             class="w-full bg-blue-100 focus:bg-blue-200 p-3 rounded-sm outline-none focus:border-r-2 border-black">
     </label>
     <label for="password" class="block w-full">
       <span class="p-3">Password:</span>
       <input id="password" type="text" placeholder="tarantino1998"
-             class="w-full bg-blue-100 focus:bg-blue-200 p-3 focus:border-r-2 outline-none">
+             class="w-full bg-blue-100 focus:bg-blue-200 p-3 focus:border-r-2 outline-none border-black">
     </label>
     <button type="submit"
-            class="bg-orange-300 transition-colors hover:bg-orange-600 w-full md:bg-midnight py-3 mt-5 rounded-md">
+            class="bg-orange-300 transition-colors hover:bg-orange-600 w-full py-3 mt-5 rounded-md">
       Login
     </button>
   </form>
 </div>
-<div class="grid grid-cols-[1fr_1fr_1fr] justify-items-center mx-10">
-  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+<div class="grid grid-cols-[1fr_1fr_1fr] justify-center items-center absolute md:translate-x-2/4 top-0 opacity-5 m-auto">
+  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full ">
   </div>
   <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
   </div>
@@ -52,7 +55,51 @@
   <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
   </div>
 </div>
-<article class="prose lg:prose-xl w-[400px] mx-auto my-8">
+<article class="prose lg:prose-xl m-10 md:m-auto md:my-10">
+  <h1 class="bg-hero-pattern">
+    Quentin Tarantino Biography
+  </h1>
+  <p>
+    Quentin Jerome Tarantino was born in Knoxville, Tennessee. His father, Tony Tarantino, is an
+    Italian-American actor and musician from New York, and his mother, Connie (McHugh), is a
+    nurse from Tennessee. Quentin moved with his mother to Torrance, California, when he was four
+    years old.
+  </p>
+  <div class="flex items-center justify-center">
+    <img src="./image/tarantino-child.jpeg" alt="Tarantino junior" class="block w-[200px] sm:w-[50] md:w-[250px] m-2">
+    <img src="./image/tarantino-child2.jpeg" alt="Tarantino junior" class="block w-[150px] sm:w-[50] md:w-[200px]">
+  </div>
+  <p>
+    In January 1992, first-time writer-director Tarantino's Reservoir Dogs (1992) appeared at
+    the Sundance Film Festival. The film garnered critical acclaim and the director became a legend
+    immediately. Two years later, he followed up Dogs success with Pulp Fiction (1994) which
+    premiered at the Cannes film festival, winning the coveted Palme D'Or Award. At the 1995
+    Academy Awards, it was nominated for the best picture, the best director and best original
+    screenplay. Tarantino and writing partner Roger Avary came away with the award only for best
+    original screenplay. In 1995, Tarantino directed one fourth of the anthology Four Rooms (1995)
+    with friends and fellow auteurs Alexandre Rockwell, Robert Rodriguez and Allison Anders. The
+    film opened December 25 in the United States to very weak reviews. Tarantino's next film was
+    From Dusk Till Dawn (1996), a vampire/crime story which he wrote and co-starred with George
+    Clooney. The film did fairly well theatrically.
+  </p>
+</article>
+<div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+  <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="./image/TarantinoHead.png" alt="Woman's Face"/>
+  <div class="text-center space-y-2 sm:text-left">
+    <div class="space-y-0.5">
+      <p class="text-lg text-black font-semibold">
+        Quentin Tarantino
+      </p>
+      <p class="text-slate-500 font-medium">
+        Director
+      </p>
+    </div>
+    <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+      Message
+    </button>
+  </div>
+</div>
+<article class="prose lg:prose-xl m-10 md:m-auto md:my-10">
   <h1>Garlic bread with cheese: What the science tells us</h1>
   <p>
     For years parents have espoused the health benefits of eating garlic bread with cheese to their
@@ -63,9 +110,16 @@
     But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
     springing up around the country.
   </p>
-  <!-- ... -->
+  <p>
+    “We have seen an alarming increase in the number of people presenting with symptoms of rabies in
+    recent years,” says Dr. Amanda Plummer, head of parasitology at the University of Oxford.
+  </p>
+  <p>
+    Plummer points to a 2017 study that shows that the number of cases of rabies may be related to
+    the rising consumption of garlic bread with cheese.
+  </p>
 </article>
-<script src="https://cdn.tailwindcss.com"></script>
+
 </body>
 </html>
 

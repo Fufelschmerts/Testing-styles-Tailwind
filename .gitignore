@@ -2,7 +2,7 @@
 .env
 
 # Игнорирование папки node_modules
-node_modules/
+.node_modules/
 
 # Игнорирование файлов с расширением .log
 *.log

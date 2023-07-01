@@ -5,16 +5,13 @@ module.exports = {
     ],
     theme: {
         extend: {
-            colors: {
-                'midnight': 'rgba(250, 50, 60, 0.5)',
-            }
         },
     },
     plugins: [
         require('@tailwindcss/forms'),
         require('@tailwindcss/typography'),
         require('@tailwindcss/aspect-ratio'),
-        require('@tailwindcss/container-queries'),
+        require('@tailwindcss/container-queries')
     ],
 }
 
