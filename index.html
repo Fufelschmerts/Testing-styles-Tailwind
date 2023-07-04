@@ -3,58 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>webDev</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./image/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./image/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./image/icons/favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
   <script src="https://cdn.tailwindcss.com?plugins=typography,aspect-ratio,line-clamp"></script>
   <link rel="stylesheet" href="src/styles.css">
   <link rel="stylesheet" href="public/output.css">
 </head>
 <body>
-<header>
-
+<header class="flex justify-evenly m-10">
+  <a class="uppercase font-bold text-blue-500" href="">
+    <img src="./image/icons/favicon-32x32.png"
+         alt="logo Ivan Malinovsky">
+  </a>
+  <nav class=" ">
+    <ul class="flex justify-evenly w-50 text-gray-400 font-semibold">
+      <li class="mr-5"><a class="" href="#">Home</a></li>
+      <li class="mr-5"><a href="#">About</a></li>
+      <li class="mr-5"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 </header>
-<div class="flex flex-wrap items-center justify-center flex-col mt-20 ">
+<div class="flex flex-wrap items-center justify-center flex-col mt-20">
   <h1 class="w-[300px] md:w-[500px] text-3xl md:text-5xl font-bold p-5 rounded-md text-center leading-normal">
     Testing styles Tailwind CSS with Quentin Tarantino
   </h1>
   <form action="" method="post"
         class="w-[300px] block m-10 shadow-md rounded-md">
-    <label for="name" class="block w-full">
+    <label for="name" class="block w-full ">
       <span class="p-3">E-mail:</span>
       <input id="name" type="email"
-             placeholder="Quentin@gmail.com"
-             class="w-full bg-blue-100 focus:bg-blue-200 p-3 rounded-sm outline-none focus:border-r-2 border-black">
+             placeholder="Quentin@tarantino.com"
+             class="w-full bg-blue-100 focus:bg-blue-200 p-3 rounded-sm border-black focus:border-r-2 focus:outline-none">
     </label>
     <label for="password" class="block w-full">
       <span class="p-3">Password:</span>
       <input id="password" type="text" placeholder="tarantino1998"
-             class="w-full bg-blue-100 focus:bg-blue-200 p-3 focus:border-r-2 outline-none border-black">
+             class="w-full bg-blue-100 focus:bg-blue-200 p-3 focus:border-r-2 border-black focus:outline-none">
     </label>
     <button type="submit"
             class="bg-orange-300 transition-colors hover:bg-orange-600 w-full py-3 mt-5 rounded-md">
       Login
     </button>
   </form>
+  <div class="flex m-auto absolute top-0">
+    <div class="grid grid-cols-[1fr_1fr_1fr] opacity-5 -z-50">
+      <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full ">
+      </div>
+      <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+      </div>
+      <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+      </div>
+      <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+      </div>
+      <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+      </div>
+      <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+      </div>
+      <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+      </div>
+      <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+      </div>
+      <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
+      </div>
+    </div>
+  </div>
 </div>
-<div class="grid grid-cols-[1fr_1fr_1fr] justify-center items-center absolute md:translate-x-2/4 top-0 opacity-5 m-auto">
-  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full ">
-  </div>
-  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
-  </div>
-  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
-  </div>
-  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
-  </div>
-  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
-  </div>
-  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
-  </div>
-  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
-  </div>
-  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
-  </div>
-  <div><img src="./image/TarantinoHead.png" alt="Tarantino head" class="rounded-full">
-  </div>
-</div>
+
 <article class="prose lg:prose-xl m-10 md:m-auto md:my-10">
   <h1 class="bg-hero-pattern">
     Quentin Tarantino Biography
@@ -65,8 +82,8 @@
     nurse from Tennessee. Quentin moved with his mother to Torrance, California, when he was four
     years old.
   </p>
-  <div class="flex items-center justify-center">
-    <img src="./image/tarantino-child.jpeg" alt="Tarantino junior" class="block w-[200px] sm:w-[50] md:w-[250px] m-2">
+  <div class="flex items-center justify-center m-auto">
+    <img src="./image/tarantino-child.jpeg" alt="Tarantino junior" class="block w-[200px] sm:w-[50] md:w-[250px] mr-4">
     <img src="./image/tarantino-child2.jpeg" alt="Tarantino junior" class="block w-[150px] sm:w-[50] md:w-[200px]">
   </div>
   <p>
